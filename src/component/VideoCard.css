@@ -1,0 +1,136 @@
+.videoCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  color: black;
+  border-radius: 10px;
+  font-family: 'Inter', serif;
+  font-size: 1.2rem;
+  font-weight: 600 !important;
+  position: relative;
+  color: white;
+  transition: 0.2s ease-in-out;
+  background: radial-gradient(#212121, #000000);
+  border: 1px solid #414141;
+}
+
+.counter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translate(-20px, -30px);
+}
+.videoCard:hover{
+  cursor: pointer;  
+  background: #0e63eb2a;
+}
+.videoCard:hover.videoCard > h3{
+  text-decoration: underline;
+}
+.videoCard:hover.videoCard > p{
+  text-decoration: underline;
+}
+.videoModal{
+  top: 0px;
+  left: 0;
+  position: fixed;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video_container{
+  height: fit-content;
+  width: 50vw;
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: black;
+  padding: 20px;
+
+}
+
+.playbtn{
+  visibility: hidden;
+  color: white !important;
+  background-color: #0E63EB !important;
+  font-weight: bold !important;
+}
+.playIcon{
+  color: #fff !important;
+}
+.videoCard:hover .playbtn{
+  visibility: visible;
+}
+.ytIcon{
+  font-size: 3.5rem !important;
+}
+.cardInfo{
+  text-align: center;
+}
+
+.cardInfo > p{
+  color: #d3d3d3;
+}
+.notesdiv{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  justify-content: space-evenly;
+}
+.notesdiv > input{
+  font-family: 'Inter', serif;
+  padding: 10px 15px;
+  border: none;
+  margin: 10px 0;
+  background: #212121;
+  color: white;
+  font-size: 16px;
+}
+.notesdiv > textarea{
+  font-family: 'Inter', serif;
+  padding: 10px 15px;
+  border: none;
+  margin: 10px 0;
+  background: #212121;
+  color: white;
+  font-size: 16px;
+}
+.notesdiv > input:focus{
+  outline: none;
+}
+.notesdiv > textarea:focus{
+  outline: none;
+}
+.vBtn{
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  color: white !important;
+}
+.addNotesBtn{
+  color: white !important;
+  background: linear-gradient(#0e63eb, #0052d6) !important;
+  border: 1px solid #0E63EB !important;
+  font-family: 'Inter', serif !important;
+}

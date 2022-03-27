@@ -1,0 +1,107 @@
+.footer{
+  background: #f5f5f5;
+  color: #121212;
+  padding: 20px;
+  font-family: sans-serif;
+  min-height: 30vh;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+
+}
+.footer > .top{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid #d3d3d3;
+}
+.topLeft > img{
+  width: 200px;
+  image-rendering: -webkit-optimize-contrast;
+}
+.topLeft > p{
+  font-weight: 200;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.topLeft > p:hover{
+  text-decoration: underline;
+}
+.topRight > a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+}
+.topRight > a:hover{
+  text-decoration: underline;
+}
+.topLeft, .topRight, .topCenter1, .topCenter2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.topCenter1 > p, .topCenter2 > p{
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px;
+  position: relative;
+}
+.topCenter1 > p::before, .topCenter2 > p::before{
+  transition: 0.2s ease-in-out;
+  content: '';
+  background: gray;
+  height: 3px;
+  width: 0%;
+  border-radius: 9999px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.topCenter1 > p:hover::before, .topCenter2 > p:hover::before{
+  width: 100%;
+}
+.topCenter1 > h2, .topCenter2 > h2{
+  font-size: 1.5rem;
+}
+.topCenter1 > p:hover, .topCenter2 > p:hover{
+  cursor: pointer;
+}
+
+.mailIcon{
+  margin-right: 10px;
+}
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1030px){
+  .topLeft > img{
+    width: 120px;
+  }
+  .topLeft, .topRight, .topCenter1, .topCenter2 {
+    margin: 10px;
+  }
+  .topCenter1 > h2{
+    font-size: 1.2rem;
+  }
+  .topCenter1 > p{
+    font-size: 16px;
+  }
+  .topCenter2 > h2{
+    font-size: 1.2rem;
+  }
+  .topCenter2 > p{
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,29 @@
+.profileAvatar{
+  height: 70px !important;
+  width: 70px !important;
+}
+.fileinput::-webkit-file-upload-button{
+  visibility: hidden;
+}
+
+.fileinput::before {
+  font-family: 'Inter', sans-serif;
+  content: 'Upload Profile Picture';
+  border-radius: 3px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 2.2vmin;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.option > img{
+  width: 7%;
+  min-width: 7%;
+}
+.option{
+  overflow: hidden;
+}
+.option > input{
+  overflow: hidden;
+}

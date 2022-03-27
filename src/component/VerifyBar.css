@@ -1,0 +1,21 @@
+.verifyBar{
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  border-radius: 5px;
+}
+.red{
+  border: 1px solid #970000 !important;
+  background: linear-gradient(130deg, #970000, #400707) !important;
+}
+.green{
+  border: 1px solid #006400 !important;
+  background: linear-gradient(130deg, #228B22, #006400) !important;
+}
+.verifyBar > p{
+  font-weight: 500;
+}

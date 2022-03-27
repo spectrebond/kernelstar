@@ -1,0 +1,43 @@
+.pricing{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.pricingBody{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.priceCard{
+  padding: 20px;
+  border-width: 2px;
+  border-image: linear-gradient(45deg, red, orange) 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 500px;
+  width: 300px;
+}
+.priceCard_info{
+  flex: 1;
+}
+.priceCard::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius:10px; 
+  padding:5px; 
+  background:linear-gradient(45deg,red,orange); 
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out; 
+  mask-composite: exclude; 
+}
+.getStarted{
+  
+}

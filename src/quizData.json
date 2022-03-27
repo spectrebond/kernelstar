@@ -1,0 +1,44 @@
+[
+  {
+    "question": "How are You ?",
+    "ansOptions": [
+      {
+        "ans": "Good",
+        "isCorrect": "true"
+      },
+      {
+        "ans": "Fine",
+        "isCorrect": "false"
+      },
+      {
+        "ans": "Bad",
+        "isCorrect": "false"
+      },
+      {
+        "ans": "Not Good",
+        "isCorrect": "false"
+      } 
+    ]
+  },
+  {
+    "question": "Where do you live?",
+    "ansOptions": [
+      {
+        "ans": "Here",
+        "isCorrect": "true"
+      },
+      {
+        "ans": "There",
+        "isCorrect": "false"
+      },
+      {
+        "ans": "House",
+        "isCorrect": "false"
+      },
+      {
+        "ans": "Sandaas",
+        "isCorrect": "false"
+      } 
+    ]
+  }
+]

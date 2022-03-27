@@ -1,0 +1,148 @@
+.banner{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #212121;
+}
+.banner_left::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('./eduback.png');
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+.banner_left{
+  flex: 0.5;
+  font-family: 'Inter', sans-serif;
+  transition: 0.2s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+.banner_left > h1{
+  font-size: 5.0rem;
+}
+.banner_left > h1 > span{
+  color: #ABCBFF;
+}
+.banner_left > h2{
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 20px 0;
+  font-size: 3.0rem;
+  text-align: center;
+  color: #CBCBCB;
+  animation: typing 3.5s steps(30 , end);
+}
+.banner_left > h3{
+  font-size: 2.0rem;
+}
+.banner_right{
+  flex: 0.5;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerBtns{
+  display: flex;
+  align-items: center;
+}
+
+.banner > ul{
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+}
+.banner > ul > li {
+  list-style: none;
+}
+.bk1{
+  font-size: 2.0rem !important;
+  color: orange !important;
+  cursor: pointer;
+}
+
+.arrdown{
+  color: white !important;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 50px !important;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  animation: bounce 1s infinite alternate ease-in-out;
+}
+
+.banner_right > img{
+  width: 50%;
+}
+.bannerBtn{
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(130deg,#4285F4, #0F9D58) !important;
+  padding: 10px 20px;
+  color: #ffffff;
+  background: transparent;
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+.bannerBtn:hover{
+  box-shadow: 0 0 10px -2px #0F9D58;
+}
+@keyframes typing {
+  from { width: 2% }
+  to { width: 100% }
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: translate(-50%,-3px);
+  }
+  100% {
+    transform: translate(-50%,3px);
+  }
+}
+
+
+@media screen and (max-width: 1030px){
+  .home_top{
+    z-index: 9999 !important;
+  }
+ .banner_right{
+   display: none;
+ }
+ .banner_left{
+   position: relative;
+   flex: 1;
+   transition: 0.2s ease-in-out;
+ }
+ .banner_left > h1{
+   z-index: 1;
+ }
+ .banner_left > h2{
+   z-index: 1;
+ }
+
+}
+

@@ -1,0 +1,131 @@
+.header{
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: #f5f5f5;
+  padding: 10px;
+  z-index: 9999 !important;
+}
+.header_left{
+  color: #000;
+  flex: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header_left > h3{
+  font-weight: 400;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header_left > h3 > .optionIcon{
+  font-size: 20px !important;
+  margin-right: 7px !important;
+}
+
+.header_left > h3:hover{
+  color: #0E63EB;
+  cursor: pointer;
+}
+.header_left > a:hover{
+  color: orange;
+  cursor: pointer;
+}
+.header_left > img{
+  width: 120px;
+  cursor: pointer;
+  image-rendering: -webkit-optimize-contrast;
+}
+.header_right{
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header_right > h3{
+  margin-left: 20px;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+}
+.header_right > button{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500 !important;
+  letter-spacing: 0.1em;
+  background: linear-gradient(#0e63eb, #0052d6) !important;
+  border: 1.5px solid #0e63eb;
+  padding: 10px 20px;
+  color: white;
+  font-size: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  height: 20%;
+  min-width: 150px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.ibtn{
+  color: white !important;
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+}
+.gray{
+  background-color: #aaaaaa !important;
+}
+.gray.modal_form > button:hover{
+  box-shadow: unset;
+}
+.burger{
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none !important;
+}
+.headerAvatar{
+  cursor: pointer;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 1030px){
+  .header{
+    flex-direction: column;
+  }
+  .header_left{
+    flex: 1;
+    width: 100%;
+  }
+  .header_right{
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_left > h3{
+    font-size: 14px;
+  }
+  .modalLeft_body > h1{
+    font-size: 2.0rem;
+  }
+  .modalLeft_body > h2{
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,38 @@
+.quiz{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+.quizBody{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quizCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+}
+.quizCard > p{
+  background: transparent;
+  border: 1px solid orange;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+.quizCard > p:hover{
+  background: orange;
+  border: 1px solid orange;
+}
+.quizCard > p:focus{
+  background: orange;
+}

@@ -1,0 +1,66 @@
+.docsCard{
+  height: 300px;
+  width: 300px;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+  background: radial-gradient(#212121, #000000);
+  border: 1px solid #414141;
+  transition: 0.2s ease-in-out;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Inter', serif;
+}
+.docsCard:hover{
+  cursor: pointer;  
+  background: #0e63eb2a;
+}
+.docModal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+.doccontainer{
+  background: #212121;
+  height: fit-content;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.closeDoc{
+  color: white !important;
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  cursor: pointer;
+}
+.viewBtn{
+  font-weight: 800 !important;
+  color: #fff !important;
+  background: #0e63eb !important;
+}
+@media screen and (max-width: 1030px){
+  .docsCard{
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+  }
+  .docsCard> h2{
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,102 @@
+.reachUs{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+
+}
+.reachUs_body{
+  min-height: 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.reachUs_left
+{
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.reachUs_left > img {
+  width: 50%;
+}
+.reachUs_right{
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reachUs_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 500px;
+  width: 400px;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 30px;
+}
+.reachInputBar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.reachInputBar > input, textarea{
+  background: whitesmoke;
+  border: none;
+  padding: 10px 15px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500 !important;
+}
+.reachInputBar > input:focus, textarea:focus{
+  outline: none;
+}
+.reachUsbtn{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500 !important;
+  letter-spacing: 0.1em;
+  background: linear-gradient(#0e63eb, #0052d6) !important;
+  border: 1.5px solid #0e63eb;
+  padding: 10px 20px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.reachUsbtn:active{
+  transform: scale(0.95);
+}
+.reachUsbtn:focus{
+  outline: none;
+}
+.sendIcon{
+  margin-right: 10px !important;
+}
+.err{
+  color: white;
+  background: linear-gradient(200deg,#400704, #970000);
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #400704;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1030px){
+  .reachUs_body{
+    height: 100%;
+    flex-direction: column;
+  }
+  .reachUs_left > img{
+    width: 30%;
+  }
+  .reachUs_form{
+    height: 400px;
+    width: 50vw;
+  }
+}

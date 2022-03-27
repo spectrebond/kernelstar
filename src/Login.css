@@ -1,0 +1,92 @@
+.login{
+  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+.login_left{
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  background: whitesmoke;
+}
+.login_left > h1{
+  font-size: 3.0rem;
+}
+.login_left > h2{
+  font-size: 1.5rem;
+}
+.login_right
+{
+  height: 100%;
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login_right > h3{
+  font-size: 2.0rem;
+}
+.loginLogo{
+  width: 200px;
+}
+.loginImage{
+  width: 500px;
+}
+.loginform{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 40%;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.loginform > input{
+  padding: 10px 15px;
+  border: 1px solid #d3d3d3;
+  font-family: inherit;
+  font-size: 16px;
+}
+.loginform > input:focus{
+  outline: none;
+}
+.loginbtn{
+  padding: 7px 10px;
+  color: white;
+  background: linear-gradient(#0e63eb, #0052d6) !important;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+.loginform > p{
+  cursor: pointer;
+}
+@media screen and (max-width: 1030px){
+  .loginImage{
+    width: 300px;
+  }
+  .loginform{
+    width: 80%;
+    height: 60%;
+  }
+  .login_left > h1{
+    font-size: 2.0rem;
+  }
+  .login_left > h2{
+    font-size: 1.2rem;
+  }
+  .loginLogo{
+    width: 150px;
+  }
+}

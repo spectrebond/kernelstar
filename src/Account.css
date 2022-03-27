@@ -1,0 +1,267 @@
+.account {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+.account_top {
+  width: 100%;
+}
+.accountBody {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #212121;
+}
+.account_left {
+  padding: 20px;
+  flex: 0.25;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+.account_right {
+  overflow-y: scroll;
+  flex: 0.75;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+}
+.account_leftTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.accountLeft_body {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+}
+.accountLeft_body > .option {
+  width: 80%;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+.option > h3 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  margin-left: 20px;
+  font-size: 2.2vmin;
+}
+.option:hover {
+  background-color: #212121;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.option:hover .accicons {
+  animation-name: bounce;
+  animation-duration: 1.2s;
+}
+.option:hover img {
+  animation-name: bounce;
+  animation-duration: 1.2s;
+}
+.accountLeft_bottom {
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  width: 100%;
+  padding-top: 20px;
+}
+.accountLeft_bottom_left {
+  flex: 0.7;
+  padding: 20px;
+  background-color: #444;
+}
+.accountLeft_bottom_right {
+  flex: 0.3;
+}
+.accountLeft_bottomInfo {
+  margin-left: 20px;
+  color: white;
+}
+.logout {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  width: 80% !important;
+  color: white !important;
+  font-family: "Inter", serif !important;
+  border: 1px solid #970000 !important;
+  background: linear-gradient(130deg, #970000, #400707) !important;
+}
+.accRightTop {
+  flex: 0.3;
+  padding: 20px;
+}
+.accRightBottom {
+  flex: 0.7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.accRightBottom > h2 {
+  text-decoration: underline;
+}
+.inputOptions {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.inputOptions > input {
+  color: white;
+  background: transparent;
+  margin: 10px 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background: #212121;
+  font-family: "Inter", sans-serif;
+}
+.inputOptions > input:focus {
+  outline: none;
+}
+.accRightTop > h3 h2 {
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.accRightTop > h2 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.accBtn {
+  color: white !important;
+  background: linear-gradient(#0e63eb, #0052d6) !important;
+  text-transform: inherit !important;
+  border: 1px solid #0e63eb !important;
+  font-family: inherit !important;
+  cursor: pointer !important;
+}
+.disabled {
+  background-color: #b3b3b3 !important;
+  color: black !important;
+}
+
+.accCard {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.accCard {
+  color: #d3d3d3;
+}
+.editCard {
+  background: #121212;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-5px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .account{
+    height: 100%;
+    min-height: 100vh;
+  }
+  .accountBody {
+    flex-direction: column;
+    height: 100%;
+    min-height: unset;
+    align-items: center;
+  }
+  .account_left {
+    height: 100%;
+    width: 100%;
+  }
+  .account_left {
+    padding: 20px;
+    flex: unset;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: unset;
+  }
+  .account_right{
+    flex: unset;
+    overflow-y: unset;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .accountLeft_body{
+    flex-direction: row;
+    margin: 20px 0;
+  }
+  .accountLeft_body > .option{
+    width: fit-content;
+    overflow: hidden;
+  }
+  .accountLeft_body > .option > input{
+    width: fit-content;
+    overflow: hidden;
+  }
+  .logout {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    width: fit-content !important;    
+  }
+  .accRightTop{
+    flex: unset;
+    width: 100%;
+  }
+  .accRightBottom{
+    flex: unset;
+    width: 100%;
+  }
+  .loadingImage{
+    width: 20%;
+  }
+  .editCard{
+    width: unset;
+  }
+}
