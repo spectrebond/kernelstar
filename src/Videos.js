@@ -141,9 +141,9 @@ useEffect(() => {
         </div>
         <div className="videosBody">
           {
-            !isLoading ? (videos && videos.map((video) => (
+            !isLoading ? (videos.length > 0 ? videos.map((video) => (
                 <VideoCard  key={video._id} topic={video.topic} subtopic={video.subtopic} desc={video.desc} videoUrl={video.videoUrl} />
-            ))):(<img src={process.env.PUBLIC_URL+'./loading.svg'}/>)
+            )):(<h1 style={{color: 'gray'}}>No Videos Yet 😟</h1>)):(<img src={process.env.PUBLIC_URL+'./loading.svg'}/>)
           }
         </div>
         <div className="videosBottom">

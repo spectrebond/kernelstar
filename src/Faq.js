@@ -5,14 +5,19 @@ import Header from './component/Header';
 import Desktop from './component/Desktop'
 function Faq() {
   const [faqs, setFaqs] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
 
   const URL = 'https://kernelbackend.herokuapp.com/api/faqs';
 
   useEffect(async () => {
+    setIsLoading(true);
     const resp = await fetch(URL);
     const respData = await resp.json()
-    setFaqs(respData)
+    if(respData){
+      setFaqs(respData)
+      setIsLoading(false);
+    }
   }, [])
 
   const [pw, setPw] = useState();
@@ -34,6 +39,8 @@ function Faq() {
             </div>
             <div className="faqCenter">
               {
+
+                isLoading ? (<img src={process.env.PUBLIC_URL+'./loadingblack.svg'}/>):(
                 faqs.map((faq) => (
                   <div className="faqs">
                     <details className="faqContent">
@@ -43,6 +50,7 @@ function Faq() {
 
                   </div>
                 ))
+                )
               }
             </div>
             <div className="faqBottom">

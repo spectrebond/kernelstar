@@ -15,6 +15,7 @@
 .faqCenter{
   min-height: 100vh;
   height: 100%;
+  text-align: center;
 }
 .faqTop{
   position: sticky;
