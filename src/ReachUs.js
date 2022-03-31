@@ -1,4 +1,4 @@
-import { Send } from "@material-ui/icons";
+import { Send } from "@mui/icons-material";
 import React, { useState } from "react";
 import { Fade } from "react-reveal";
 import Footer from "./component/Footer";

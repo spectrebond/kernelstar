@@ -1,4 +1,4 @@
-import { Close, Delete, Visibility } from '@material-ui/icons'
+import { Close, Delete, Visibility } from '@mui/icons-material'
 import React, { useState } from 'react'
 import { useStateValue } from '../StateProvider';
 import { Fade, Zoom } from 'react-reveal'

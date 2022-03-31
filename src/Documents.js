@@ -1,4 +1,4 @@
-import { Mic, MicOff, Search } from '@material-ui/icons';
+import { Mic, MicOff, Search } from '@mui/icons-material';
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import DocsCard from './component/DocsCard';

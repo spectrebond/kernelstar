@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import './VideoCard.css'
 import YouTube from 'react-youtube';
-import { Close, PlayCircleOutline, Save } from '@material-ui/icons';
+import { Close, PlayCircleOutline, Save } from '@mui/icons-material';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Button, IconButton } from '@material-ui/core';
-import YouTubeIcon from '@material-ui/icons/YouTube';
 import Fade from 'react-reveal/Fade'
 import Tilty from 'react-tilty'
 function VideoCard({ topic, subtopic, desc, videoUrl }) {

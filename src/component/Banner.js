@@ -1,4 +1,4 @@
-import { ArrowDownward, MenuBook, Search } from '@material-ui/icons'
+import { ArrowDownward, MenuBook, Search } from '@mui/icons-material'
 import React, { useEffect, useState } from 'react'
 import Fade from 'react-reveal/Fade'
 

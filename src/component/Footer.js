@@ -1,4 +1,4 @@
-import { ArrowUpward, Facebook, Instagram, Mail, Twitter } from '@material-ui/icons'
+import { ArrowUpward, Facebook, Instagram, Mail, Twitter } from '@mui/icons-material'
 import React from 'react'
 import logo from './logo.png'
 import './Footer.css'

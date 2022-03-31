@@ -1,5 +1,5 @@
 import { Button, IconButton } from '@material-ui/core'
-import { Close } from '@material-ui/icons';
+import { Close } from '@mui/icons-material';
 import React, { useState } from 'react'
 import { useStateValue } from '../StateProvider';
 import Tilty from 'react-tilty';

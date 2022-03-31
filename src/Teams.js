@@ -1,4 +1,4 @@
-import { LinkedIn, Mail } from '@material-ui/icons'
+import { LinkedIn, Mail } from '@mui/icons-material'
 import React, { useEffect, useState } from 'react'
 import Footer from './component/Footer'
 import Header from './component/Header'

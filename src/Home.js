@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import Carousel from "react-elastic-carousel";
 import VerifyBar from "./component/VerifyBar";
 import Desktop from "./component/Desktop";
-import { Search } from "@material-ui/icons";
+import { Search } from "@mui/icons-material";
 import Fade from 'react-reveal/Fade'
 import { Button, IconButton } from "@material-ui/core";
 

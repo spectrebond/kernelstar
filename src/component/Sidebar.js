@@ -1,5 +1,5 @@
 import { Avatar, Button } from '@material-ui/core';
-import { AddAPhoto, CardMembership, Edit, ListAlt, Score } from '@material-ui/icons';
+import { AddAPhoto, CardMembership, Edit, ListAlt, Score } from '@mui/icons-material';
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import './Sidebar.css'

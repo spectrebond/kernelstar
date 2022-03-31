@@ -1,19 +1,4 @@
-import { Avatar, IconButton } from "@material-ui/core";
-import {
-  Close,
-  GroupRounded,
-  HomeRounded,
-  InfoOutlined,
-  LiveHelpRounded,
-  Menu,
-  Help,
-  Call,
-  HomeOutlined,
-  Home,
-  GroupOutlined,
-  LiveHelpOutlined,
-  CallOutlined
-} from "@mui/icons-material/solid";
+import { Avatar } from "@material-ui/core";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -23,6 +8,8 @@ import "./Header.css";
 import { useStateValue } from "../StateProvider";
 import { Fade } from "react-reveal";
 import 'react-lazy-load-image-component/src/effects/blur.css';
+
+import { Home, GroupOutlined, Menu, Recommend, LiveHelpOutlined, InfoOutlined, CallOutlined } from '@mui/icons-material'
 
 function Header() {
   const history = useHistory();
