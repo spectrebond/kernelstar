@@ -95,6 +95,10 @@ useEffect(() => {
       tagname: "Development",
       value: "development"
     },
+    {
+      tagname: "GATE",
+      value: "gate"
+    },
   ]
 
  
