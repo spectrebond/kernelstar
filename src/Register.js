@@ -13,6 +13,7 @@ function Register() {
   const [password, setPassword] = useState("");
 
   const REGURL = "https://kernelbackend.herokuapp.com/api/user/register";
+  //const REGURL = "http://localhost:5000/api/user/register";
 
   const register = async () => {
     setisLoading(true)

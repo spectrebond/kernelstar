@@ -69,11 +69,28 @@
 
 }
 
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%);
+display: none;
+transform-origin: center;
+padding: 10px;
+background: linear-gradient(#0e63eb, #0052d6) !important;
+border: 1.5px solid #0e63eb;
+color: #fff;
+width: 150px;
+z-index: 9;
+border-radius: 5px; */
+
 .playbtn{
   visibility: hidden;
   color: white !important;
-  background-color: #0E63EB !important;
+  background: linear-gradient(#0e63eb, #0052d6) !important;
   font-weight: bold !important;
+  width: 150px !important;
+  padding: 10px !important;
+  border: 1.5px solid #0e63eb;
 }
 .playIcon{
   color: #fff !important;
