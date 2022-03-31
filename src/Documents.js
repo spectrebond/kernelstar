@@ -76,14 +76,6 @@ useEffect(() => {
 
   const tags = [
     {
-      tagname: "Java",
-      value: "java"
-    },
-    {
-      tagname: "Python",
-      value: "python"
-    },
-    {
       tagname: "Data Structures",
       value: "data structures"
     },
