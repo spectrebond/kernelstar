@@ -13,7 +13,7 @@ import {
   GroupOutlined,
   LiveHelpOutlined,
   CallOutlined
-} from "@material-ui/icons";
+} from "@mui/icons-material/solid";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -110,6 +110,10 @@ function Header() {
             {" "}
             <GroupOutlined className="optionIcon" /> 
             Our Squad
+          </h3>
+          <h3>
+            <Recommend className="optionIcon" /> 
+            Credits
           </h3>
           <h3 onClick={faqs}>
             <LiveHelpOutlined className="optionIcon" />
