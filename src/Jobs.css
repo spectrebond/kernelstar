@@ -1,0 +1,23 @@
+.jobs{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: #111111;
+}
+.jobsHeader{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.jobsHeader > h1{
+  color: white;
+}
+.jobCards_section{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}

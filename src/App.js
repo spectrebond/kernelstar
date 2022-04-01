@@ -14,6 +14,7 @@ import ResetPassword from "./ResetPassword";
 import ReachUs from "./ReachUs";
 import Login from "./Login";
 import Register from "./Register";
+import Jobs from './Jobs';
 function App() {
 
   return (
@@ -52,6 +53,9 @@ function App() {
           </Route>
           <Route path='/courses'>
             <Courses />
+          </Route>
+          <Route path='/jobs'>
+            <Jobs />
           </Route>
           <Route path='/register'>
             <Register />

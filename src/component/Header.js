@@ -9,7 +9,7 @@ import { useStateValue } from "../StateProvider";
 import { Fade } from "react-reveal";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import { Home, GroupOutlined, Menu, Recommend, LiveHelpOutlined, InfoOutlined, CallOutlined } from '@mui/icons-material'
+import { Work, Home, GroupOutlined, Menu, Recommend, LiveHelpOutlined, InfoOutlined, CallOutlined } from '@mui/icons-material'
 
 function Header() {
   const history = useHistory();
@@ -32,7 +32,9 @@ function Header() {
   const reachus = () => {
     history.push("/reachus");
   };
-
+  const jobs = () =>{
+    history.push('/jobs')
+  }
 
   useEffect(async () => {
     if (localStorage.getItem("uid")) {
@@ -98,9 +100,9 @@ function Header() {
             <GroupOutlined className="optionIcon" /> 
             Our Squad
           </h3>
-          <h3>
-            <Recommend className="optionIcon" /> 
-            Credits
+          <h3 onClick={jobs}>
+            <Work className="optionIcon" /> 
+            Jobs
           </h3>
           <h3 onClick={faqs}>
             <LiveHelpOutlined className="optionIcon" />
