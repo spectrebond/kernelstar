@@ -12,7 +12,7 @@ import Desktop from "./component/Desktop";
 import { Search } from "@mui/icons-material";
 import Fade from 'react-reveal/Fade'
 import { Button, IconButton } from "@material-ui/core";
-
+import QuizIcon from '@mui/icons-material/Quiz';
 
 function Home() {
   const [errMsg, setErrMsg] = useState("")
@@ -51,6 +51,9 @@ function Home() {
   const course = () => {
     history.push("/courses");
   };
+  const quiz = () =>{
+    window.open('https://kernelstarquiz.vercel.app/','_blank');
+  }
   const docs = () => {
     if (localStorage.getItem("uid")) {
       history.push("/docs");
@@ -178,6 +181,25 @@ function Home() {
               </Fade>
             </div>
           </div>
+          <div className="home_section">
+            <h1>Take the KernelStar Quiz Now!!!</h1>
+            <div className="home_sectionBody">
+              <Fade left>
+                <div className="homeCard">
+                  <div className="cardInfo">
+                  <img src="https://img.icons8.com/ios/50/000000/quiz.png" />
+                    <h1>QUIZ</h1>
+                    <p>"Practice Makes Everyone Perfect"</p>
+
+                  </div>
+                  <div className="explore" onClick={quiz}>
+                    <QuizIcon />
+                    <h3>Take It Fast!!</h3>
+                  </div>
+                </div>
+              </Fade>
+            </div>
+          </div>  
           <div className="home_testimonials" id="vision">
             <h1>Our Vision</h1>
             <div className="testimonialsBody">
